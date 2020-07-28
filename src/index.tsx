@@ -1,5 +1,21 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import App from './App'
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('app'))
+import App from './App'
+import { UserView } from './UserView';
+
+ReactDOM.render(
+  <div>
+    <Router>
+      <Route path="/" exact>
+        <App />
+      </Route>
+      <Route path="/:id" exact>
+        <App />
+        <UserView />
+      </Route>
+    </Router>
+  </div>,
+  document.getElementById('app')
+)

@@ -1,8 +1,11 @@
 import * as React from 'react'
 import { User, Payload } from './user';
+import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
+import { UserView } from './UserView';
 
 const App = () => {
   const [users, setContent] = React.useState<User[]>([]);
+  const history = useHistory()
 
   React.useEffect(() => {
     fetch('https://reqres.in/api/users')
@@ -11,11 +14,13 @@ const App = () => {
   }, [])
 
   return (
-    <ul>
-      {users.map(user => (
-        <li>{user.first_name} {user.last_name}</li>
-      ))}
-    </ul>
+    <div>
+      <ul>
+        {users.map(user => (
+          <li onClick={() => history.push(`/${user.id}`)}>{user.first_name} {user.last_name}</li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

@@ -6,6 +6,10 @@ module.exports = {
   },
 
   devtool: 'source-map',
+  
+  devServer: {
+    historyApiFallback: true
+  },
 
   resolve: {
     extensions: ['.ts', '.tsx', '.js']
