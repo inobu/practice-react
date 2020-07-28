@@ -2,5 +2,5 @@
 
 ## 使用方法
 
-`npm install`
+`npm install`  
 `npm run start`
