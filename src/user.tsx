@@ -9,7 +9,7 @@ export interface UserDetail {
   email: string
   first_name: string
   last_name: string
-  avater: string
+  avatar: string
 }
 
 export interface Payload<T> {

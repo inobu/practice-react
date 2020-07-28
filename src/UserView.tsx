@@ -21,7 +21,7 @@ export const UserView = () => {
       <div>{user?.first_name}</div>
       <div>{user?.last_name}</div>
       <div>{user?.email}</div>
-      <div><img src={user?.avater} /></div>
+      <div><img src={user?.avatar} alt={"avater"} /></div>
     </div>
   )
 }
