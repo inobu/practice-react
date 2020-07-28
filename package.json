@@ -17,6 +17,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
+    "start": "npx webpack-dev-server",
     "build": "webpack --colors --mode=development --config ./webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
