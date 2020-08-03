@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { UserView } from './UserView';
-import { UserList } from './UserList'
+import { UserView } from './components/UserView';
+import { UserList } from './components/UserList'
 
 const App = () => {
   return (
