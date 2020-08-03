@@ -16,8 +16,8 @@ const App = () => {
   return (
     <div>
       <ul>
-        {users.map(user => (
-          <li>
+        {users.map((user, index) => (
+          <li key={index}>
             <a href="#" onClick={() => history.push(`/${user.id}`)}>{user.first_name} {user.last_name}</a>
           </li>
         ))}
