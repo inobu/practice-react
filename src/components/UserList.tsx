@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { User, Payload } from './User';
 import { useHistory } from 'react-router-dom';
-import * as history from 'history'
+import * as H from 'history'
 
 export const UserListContainer = () => {
   const [users, setContent] = React.useState<User[]>([]);
@@ -18,7 +18,7 @@ export const UserListContainer = () => {
 
 interface UserListProps {
   users: User[],
-  history: history.History<history.History.UnknownFacade>
+  history: H.History<H.History.UnknownFacade>
 }
 
 const UserListComponent: React.FC<UserListProps> = ({ users, history }: UserListProps) => {
