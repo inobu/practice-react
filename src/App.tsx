@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { UserView } from './components/UserView';
+import { UserViewContainer } from './components/UserView';
 import { UserList } from './components/UserList'
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <Router>
         <UserList />
         <Route path="/:id" exact>
-          <UserView />
+          <UserViewContainer />
         </Route>
       </Router>
     </div>
