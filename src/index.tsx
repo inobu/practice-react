@@ -8,11 +8,8 @@ import { UserView } from './UserView';
 ReactDOM.render(
   <div>
     <Router>
-      <Route path="/" exact>
-        <App />
-      </Route>
+      <App />
       <Route path="/:id" exact>
-        <App />
         <UserView />
       </Route>
     </Router>
