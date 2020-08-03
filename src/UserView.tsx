@@ -1,6 +1,5 @@
 import * as React from 'react'
-
-import { UserDetail, Coating } from './user';
+import { UserDetail, Coating } from './User';
 import { useLocation } from 'react-router-dom';
 
 export const UserView = () => {

@@ -1,7 +1,6 @@
 import * as React from 'react'
-import { User, Payload } from './user';
-import { BrowserRouter as Router, Route, Switch, useHistory } from 'react-router-dom';
-import { UserView } from './UserView';
+import { User, Payload } from './User';
+import { useHistory } from 'react-router-dom';
 
 const App = () => {
   const [users, setContent] = React.useState<User[]>([]);
