@@ -2,13 +2,13 @@ import * as React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { UserViewContainer } from './components/UserView';
-import { UserList } from './components/UserList'
+import { UserListContainer } from './components/UserList'
 
 const App = () => {
   return (
     <div>
       <Router>
-        <UserList />
+        <UserListContainer />
         <Route path="/:id" exact>
           <UserViewContainer />
         </Route>
